@@ -164,7 +164,7 @@ class StreamingTTSService:
                 prefilled_outputs = torch.load(
                     preset_path,
                     map_location=self._torch_device,
-                    weights_only=True,
+                    weights_only=False,
                 )
             self._voice_cache[key] = prefilled_outputs
 
